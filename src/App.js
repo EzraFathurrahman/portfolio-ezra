@@ -14,11 +14,10 @@ const App = () => {
       <Header />
       <Banner />
       <Nav />
-      <About />
-      <Services />
       <Work />
       <Contact />
       {/* <div className='h-[4000px]'></div> */}
+    <div ></div>
     </div>
   );
 };
