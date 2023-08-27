@@ -11,9 +11,9 @@ const App = () => {
   return (
     <div className='bg-site bg-no-repeat bg-cover overflow-hidden'>
       <Header />
-      <Banner className='mb-6'/>
+      <Banner className='mb-12'/>
       <Nav />
-      <Work />
+      <Work className='mb-10' />
       <Contact />
       {/* <div className='h-[4000px]'></div> */}
     <div ></div>
