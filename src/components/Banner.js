@@ -57,7 +57,7 @@ const Banner = () => {
     {/* desc & banner CTA */}
     
     {/* image */}
-    <motion.div variants={fadeIn('up',0.3)} initial="hidden" whileInView={'show'} viewport= {{once:false, amount:0.7 }} className='hidden lg:flex flex-1 max-w-[300px] lg:max-w-[482px] mx-auto'>
+    <motion.div variants={fadeIn('up',0.3)} initial="hidden" whileInView={'show'} viewport= {{once:false, amount:0.7 }} className='hidden lg:flex flex-1 max-w-[280px] lg:max-w-[430px] mx-auto'>
       <img src={Image} alt="profile" />
     </motion.div>
     
