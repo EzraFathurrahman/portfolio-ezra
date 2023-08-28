@@ -40,7 +40,7 @@ const Contact = () => {
           <motion.form variants={fadeIn('left',0.3)} initial='hidden' whileInView={'show'} viewport={{once:false, amount:0.3}} className='flex-1 border rounded-2xl flex flex-col gap-y-6 pb-24 p-6 items-start'>
             <input className='bg-transparent border-b py-3 outline-none w-full placeholder:text-white focus:border-accent transition-all' type='text' placeholder='Your Name' />
           <input className='bg-transparent border-b py-3 outline-none w-full placeholder:text-white focus:border-accent transition-all' 
-          ref={form} onSubmit={sendEmail} type='text' placeholder='Your Email'/>
+           type='text' placeholder='Your Email'/>
           <textarea className='bg-transparent border-b py-3 outline-none w-full placeholder:text-white focus:border-accent transition-all'
           type='text' placeholder='Your Message'></textarea>
           <button className='btn btn-lg'>Send Message</button>
