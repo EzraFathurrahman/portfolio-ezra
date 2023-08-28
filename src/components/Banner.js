@@ -1,8 +1,8 @@
 import React from 'react';
 
 import Image from '../assets/avatar.svg';
-import {FaGithub,FaYoutube,FaDribbble,FaLinkedin} from 'react-icons/fa';
-import { BsMailbox } from 'react-icons/bs';
+import {FaGithub,FaLinkedin} from 'react-icons/fa';
+
 
 import { TypeAnimation } from 'react-type-animation';
 import {motion} from 'framer-motion';
@@ -34,9 +34,15 @@ const Banner = () => {
       </button>
       </a>
       
-      <a href="#work" className='text-gradient btnk-link'>My Portfolio</a>
+      <a href="#work" className='text-gradient btnk-link px-2'>My Portfolio</a>
+      <a href="https://github.com/EzraFathurrahman" >
+        <FaGithub className='text-4xl'/>
+      </a>
+      <a href="https://www.linkedin.com/in/muhammad-ezra">
+        <FaLinkedin className='text-4xl'/>
+      </a>
     </motion.div>
-    {/* socials */}
+    {/* socials
     <motion.div variants={fadeIn('up',0.3)} initial="hidden" whileInView={'show'} viewport= {{once:false, amount:0.7 }} className='flex text-[20px] gap-x-6 max-w-max mx-auto lg:mx-0'>
       
       <a href="https://github.com/EzraFathurrahman" >
@@ -45,7 +51,7 @@ const Banner = () => {
       <a href="https://www.linkedin.com/in/muhammad-ezra">
         <FaLinkedin className='text-4xl'/>
       </a>
-    </motion.div>
+    </motion.div> */}
 
     </div>
     {/* desc & banner CTA */}
