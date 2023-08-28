@@ -5,18 +5,20 @@ import emailjs from '@emailjs/browser';
 
 
 const Contact = () => {
-  // const form = useRef();
+  const form = useRef();
 
-  // const sendEmail = (e) => {
-  //   e.preventDefault();
+  const sendEmail = (e) => {
+    e.preventDefault();
 
-  //   emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', form.current, 'YOUR_PUBLIC_KEY')
-  //     .then((result) => {
-  //         console.log(result.text);
-  //     }, (error) => {
-  //         console.log(error.text);
-  //     });
-  // };
+    emailjs.sendForm('service_0azap89', 'template_ht1br1i', form.current, '4ibscZtawprTb4wqJ')
+      .then((result) => {
+          console.log(result.text);
+          console.log("Message Sent")
+          e.target.reset();
+        }, (error) => {
+          console.log(error.text);
+      });
+  };
   
   return (
     <section className='py-16 lg:section' id='contact'>
@@ -37,13 +39,13 @@ const Contact = () => {
             
           </motion.div>
           {/* form */}
-          <motion.form variants={fadeIn('left',0.3)} initial='hidden' whileInView={'show'} viewport={{once:false, amount:0.3}} className='flex-1 border rounded-2xl flex flex-col gap-y-6 pb-24 p-6 items-start'>
-            <input className='bg-transparent border-b py-3 outline-none w-full placeholder:text-white focus:border-accent transition-all' type='text' placeholder='Your Name' />
+          <motion.form variants={fadeIn('left',0.3)} initial='hidden' whileInView={'show'} viewport={{once:false, amount:0.3}} ref={form} onSubmit={sendEmail} className='flex-1 border rounded-2xl flex flex-col gap-y-6 pb-24 p-6 items-start'>
+            <input className='bg-transparent border-b py-3 outline-none w-full placeholder:text-white focus:border-accent transition-all' type='name' placeholder='Your Name' name='user_name' />
           <input className='bg-transparent border-b py-3 outline-none w-full placeholder:text-white focus:border-accent transition-all' 
-           type='text' placeholder='Your Email'/>
+           type='email' placeholder='Your Email' name='user_email'/>
           <textarea className='bg-transparent border-b py-3 outline-none w-full placeholder:text-white focus:border-accent transition-all'
-          type='text' placeholder='Your Message'></textarea>
-          <button className='btn btn-lg'>Send Message</button>
+          type='text' placeholder='Your Message' name='message'></textarea>
+          <button className='btn btn-lg' type='submit' value='Send'>Send Message</button>
           </motion.form>
         </div>
       </div>
