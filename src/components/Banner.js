@@ -25,7 +25,7 @@ const Banner = () => {
         <TypeAnimation  sequence={['Web Developer',2000,'Passionate Hustler',2000,'Fulltime Learner', 2000]} speed={50} className='text-accent' wrapper='span' repeat={Infinity}>
         </TypeAnimation>
       </motion.div>
-      <motion.p variants={fadeIn('up',0.4)} initial="hidden" whileInView={'show'} viewport= {{once:false, amount:0.7 }} className='mb-8 max-w-lg mx-auto lg:mx-0'>A computer science graduate. Experienced in working with a variety of technology and software solutions. I have interest in Website Development especially in backend and fullstack Development.
+      <motion.p variants={fadeIn('up',0.4)} initial="hidden" whileInView={'show'} viewport= {{once:false, amount:0.7 }} className='mb-8 max-w-lg mx-auto lg:mx-0'>A computer science of Bogor Agricultural University graduate. Experienced in working with a variety of technology and software solutions. I have interest in the IT field especially website development and data analytics.
     </motion.p>
     <motion.div variants={fadeIn('up',0.4)} initial="hidden" whileInView={'show'} viewport= {{once:false, amount:0.7 }} className='flex max-w-max gap-x-6 items-center mb-12 mx-auto lg:mx-0'>
       <a href="https://wa.me/0895800283076">
