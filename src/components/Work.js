@@ -17,7 +17,7 @@ const Work  = () => {
           <div>
           <h2 className='h2 leading-tight text-accent'>My Latest <br /> Work</h2>
           <p className='max-w-sm mb-6'>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, vitae quaerat neque recusandae eos officiis harum accusantium at rerum quam ullam optio esse ipsum soluta aperiam tempora hic corporis. Sapiente?
+            Hi! Checkout my work here, i've experienced in building some projects using various stack like Next JS, Express JS, and Laravel. Using React JS, Tailwind CSS and Vanilla CSS as the frontend, and Node JS, and SQL as the backend.
           </p>
           <button className='btn btn-sm'>View All Projects</button>
           </div>
