@@ -17,20 +17,24 @@ const Work  = () => {
           <div>
           <h2 className='h2 leading-tight text-accent'>My Latest <br /> Work</h2>
           <p className='max-w-sm mb-6'>
-            Hi! Checkout my work here, i've experienced in building some projects using various stack like Next JS, Express JS, and Laravel. Using React JS, Tailwind CSS and Vanilla CSS as the frontend, and Node JS, and SQL as the backend.
+            Hi! Checkout my work here, i've experienced in building some projects using various stack like Next JS, Express JS, and Laravel. Using React JS, Tailwind CSS, and Vanilla CSS as the frontend, and Node JS with SQL as the backend and database.
           </p>
           <button className='btn btn-sm'>View All Projects</button>
           </div>
 
-          {/* Image */}
+          {/* Web 1 */}
 
           <div className='group relative overflow-hidden border-2 border-white/50 rounded-xl '>
             {/* Overlay */}
-            <div className='group-hover:bg-black/70 w-full h-full absolute z-40 transition-all duration-300'>
+            <a href="https://pestasains.ipb.ac.id/" >
+            <div className='group-hover:bg-black/70 w-full h-full absolute z-40 transition-all duration-300 cursor-pointer'>
 
             </div>
             {/* img */}
+            
             <img className='group-hover:scale-125 transition-all duration-500'  src={Img1} alt="portfolio" />
+            </a>
+            
             {/* title */}
             <div className='absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-700 z-50'>
              <span className='text-gradient'> Web A</span>
@@ -44,8 +48,11 @@ const Work  = () => {
         xl:gap-y-18">
           {/* Image */}
           <div className='group relative overflow-hidden border-2 border-white/50 rounded-xl lg:h-72'>
+
+            {/* Web 2 */}
             {/* Overlay */}
-            <div className='group-hover:bg-black/70 w-full h-full absolute z-40 transition-all duration-300'>
+            <a href="https://cloudy-ez.netlify.app/">
+            <div className='group-hover:bg-black/70 w-full h-full absolute z-40 transition-all duration-300 cursor-pointer'>
 
             </div>
             {/* img */}
@@ -54,6 +61,7 @@ const Work  = () => {
             <div className='absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-700 z-50'>
              <span className='text-gradient'> Web A</span>
             </div>
+            </a>
             
             
           </div>
